@@ -1,5 +1,15 @@
 {
+  "name": "02-api-rest-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsx watch src/server.ts",
+    "lint": "eslint src -c .ts --fix"
+  },
   "dependencies": {
     "fastify": "^4.26.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.1.0"
   }
 }
