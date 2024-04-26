@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
     "lint": "eslint src -c .ts --fix",
     "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
     "migrate": "npm run knex -- migrate:latest",
@@ -23,7 +24,9 @@
     "@types/supertest": "^6.0.2",
     "eslint": "^9.1.0",
     "supertest": "^7.0.0",
+    "tsup": "^8.0.2",
     "tsx": "^4.7.2",
+    "typescript": "^5.4.5",
     "vitest": "^1.5.2"
   }
 }
