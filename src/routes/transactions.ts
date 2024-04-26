@@ -62,7 +62,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
       const summary = await knex("transactions")
         .where("session_id", sessionId)
         .sum("amount", {
-          as: "ammount",
+          as: "amount",
         })
         .first();
 
